@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome-Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        font-family: "Kavivanar", cursive;
+        font-weight: 400;
+        background-image: linear-gradient(
+          to top left,
+          rgba(211, 211, 100) 0%,
+          rgba(202, 202, 0) 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-container {
+        position: relative;
+        width: 50rem;
+        height: 40rem;
+        background-color: rgba(240, 133, 73);
+        border-radius: 5rem;
+        box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+      }
+
+      .main-image {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 1rem;
+      }
+      .main-paragraph {
+        font-size: 20px;
+        position: absolute;
+        top: 70%;
+        transform: translateY(-70%);
+        margin-top: 2rem;
+      }
+      .main-button {
+        width: 10rem;
+        height: 35px;
+        background-color: bisque;
+        border: none;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 5%;
+        font-size: 1rem;
+        box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+        transition: all 0.2s;
+      }
+      .main-button:active {
+        transform: translate(25%, 3px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <img
+        src="./assets/images/personal-image.jpg"
+        class="main-image"
+        alt="A personal image of me"
+      />
+      <p class="main-paragraph">
+        Hello and welcome to my personal webpage!! <br />
+        My name is Alexandros and this project is designed <br />
+        to show my personal activities, skills and knowledge <br />
+        in web development technologies in a more <br />
+        interesting view from usual. Click the button <br />
+        and let's get started!!
+      </p>
+      <button class="main-button"><a>Next</a></button>
+    </main>
+  </body>
+</html>
