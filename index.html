@@ -19,11 +19,8 @@
         height: 100vh;
         font-family: "Kavivanar", cursive;
         font-weight: 400;
-        background-image: linear-gradient(
-          to top left,
-          rgba(211, 211, 100) 0%,
-          rgba(202, 202, 0) 100%
-        );
+        background-image: linear-gradient(300deg, #c0c0c0, #d3d3d3);
+        animation: gradient-animation 18s ease infinite;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,7 +29,7 @@
         position: relative;
         width: 50rem;
         height: 40rem;
-        background-color: rgba(240, 133, 73);
+        background-color: white;
         border-radius: 5rem;
         box-shadow: 0rem 3rem 5rem rgba(0, 0, 0, 0.25);
         display: flex;
@@ -67,6 +64,11 @@
         transform: translate(25%, 3px);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       }
+
+      .main-button a {
+        color: black;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -84,7 +86,9 @@
         interesting view from usual. Click the button <br />
         and let's get started!!
       </p>
-      <button class="main-button"><a>Next</a></button>
+      <button class="main-button" onclick="window.location.href='home.html'">
+        Start
+      </button>
     </main>
   </body>
 </html>
