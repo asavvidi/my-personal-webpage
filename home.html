@@ -111,9 +111,85 @@
         margin-top: 2rem;
       }
 
-      .main-container-bubbles {
+      .main-container-technologies {
         width: 100%;
         height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 1rem;
+      }
+      .technology {
+        max-width: 400px;
+        flex: 1;
+        padding: 20px;
+        border-radius: 1rem;
+        background-color: #eeeeee;
+        text-align: center;
+      }
+      .tech-features {
+        list-style: none;
+      }
+
+      .tech-features > li {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .tech-title {
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .tech-content {
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .foot-container {
+        height: 20%;
+        width: 100%;
+        background-color: #d3d3d3;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .foot-apps {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #dcdcdc;
+        text-align: center;
+        border-radius: 1rem;
+      }
+      .app-media {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .app-title {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .app-media > li {
+        font-size: 15px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .app-media > li > img {
+        width: 20px;
+        height: 20px;
       }
     </style>
   </head>
@@ -156,10 +232,53 @@
       </div>
       <h2>The technologies is used in the project:</h2>
 
-      <div class="main-container-bubbles">
-        <div class="bubble--0"></div>
-        <div class="bubble--1"></div>
-        <div class="bubble--2"></div>
+      <div class="main-container-technologies">
+        <div class="technology">
+          <div class="tech-title">HTML</div>
+          <div class="tech-content">Build the structure</div>
+          <ul class="tech-features">
+            <li>✅ Use the flexbox to align elements</li>
+            <li>✅ Break the page in 3 main containers</li>
+            <li>✅ Keep the navbar and footer the same in all pages</li>
+          </ul>
+        </div>
+        <div class="technology">
+          <div class="tech-title">CSS</div>
+          <div class="tech-content">Style the website</div>
+          <ul class="tech-features">
+            <li>✅ Use the internal stylesheet to style the elements</li>
+            <li>✅ Use a minimalist way to style the page</li>
+            <li>🚫 Didn't use any Bootstrap code yet</li>
+          </ul>
+        </div>
+        <div class="technology">
+          <div class="tech-title">JavaScript</div>
+          <div class="tech-content">Add some functionality</div>
+          <ul class="tech-features">
+            <li>✅ Add functionality to some buttons</li>
+            <li>🚫 No functionality to exit and search buttons</li>
+            <li>🚫 I'll add to future updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-container">
+      <div class="foot-apps">
+        <div class="app-title">Find me on:</div>
+        <ul class="app-media">
+          <li>
+            <img src="./assets/images/instagram-logo.png" /><a
+              >alexandrossvds</a
+            >
+          </li>
+          <li>
+            <img src="./assets/images/linkedin-logo.png" /><a>
+              Alexandros Savvidis</a
+            >
+          </li>
+          <li><img src="./assets/images/github-logo.png" /><a>asavvidi</a></li>
+        </ul>
       </div>
     </div>
   </body>
