@@ -83,78 +83,11 @@
 
       .main-container {
         width: 100%;
-        height: auto;
+        height: 80%;
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-
-      .main-container h1 {
-        font-size: 3rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        text-decoration: underline;
-      }
-      .main-container-paragraph {
-        background-color: #eeeeee;
-        width: 60rem;
-        height: auto;
-        margin-top: 2rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-      }
-      .main-container-paragraph p {
-        font-size: 1.5rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-      .main-container h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-      }
-
-      .main-container-technologies {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-        margin-top: 1rem;
-      }
-      .technology {
-        max-width: 400px;
-        flex: 1;
-        padding: 20px;
-        border-radius: 1rem;
-        background-color: #eeeeee;
-        text-align: center;
-      }
-      .tech-features {
-        list-style: none;
-      }
-
-      .tech-features > li {
-        font-size: 15px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-      .tech-title {
-        font-size: 20px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .tech-content {
-        font-size: 20px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-weight: bold;
-        margin-bottom: 10px;
       }
 
       .foot-container {
@@ -195,6 +128,57 @@
         width: 20px;
         height: 20px;
       }
+
+      .press-div {
+        width: 80%;
+        height: 80%;
+        position: relative;
+        margin-top: 1rem;
+      }
+      .press-div > h2 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+      }
+
+      .press-div > button {
+        width: 100px;
+        height: 40px;
+        border-radius: 2rem;
+        border: none;
+        background-color: wheat;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1rem;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color ease 1s, width 2s, height 2s, font-size 2s;
+      }
+
+      .press-div > button:hover {
+        background-color: white;
+        height: 80px;
+        width: 150px;
+        font-size: 2rem;
+      }
+      .press-div > img {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -206,7 +190,7 @@
         </li>
         <li><a>Apps</a></li>
         <li><a>News</a></li>
-        <li><a href="about.html">About me</a></li>
+        <li><a>About me</a></li>
       </ul>
       <div class="nav-buttons">
         <button type="submit" class="nav-search">
@@ -219,51 +203,15 @@
       </div>
     </div>
     <div class="main-container">
-      <h1>Alex@pp</h1>
-      <div class="main-container-paragraph">
-        <p>
-          Hello everyone!!!!...Again!. As i introduce myself, my name is
-          Alexandros and this is Alex@pp. <br />
-          Before everyone starts asking what it is, Alex@pp is a HTML, CSS built
-          website<br />
-          that contains informations about the apps i have built through my
-          academic-personal <br />
-          years of work. But it's also a project of practising my skills in web
-          development technologies <br />and what is better than learning
-          through coding!. Now, i want you to explore all the sections by<br />
-          yourself and i hope you find this project as funny as i did!.
-        </p>
-      </div>
-      <h2>The technologies is used in the project:</h2>
-
-      <div class="main-container-technologies">
-        <div class="technology">
-          <div class="tech-title">HTML</div>
-          <div class="tech-content">Build the structure</div>
-          <ul class="tech-features">
-            <li>✅ Use the flexbox to align elements</li>
-            <li>✅ Break the page in 3 main containers</li>
-            <li>✅ Keep the navbar and footer the same in all pages</li>
-          </ul>
-        </div>
-        <div class="technology">
-          <div class="tech-title">CSS</div>
-          <div class="tech-content">Style the website</div>
-          <ul class="tech-features">
-            <li>✅ Use the internal stylesheet to style the elements</li>
-            <li>✅ Use a minimalist way to style the page</li>
-            <li>🚫 Didn't use any Bootstrap code yet</li>
-          </ul>
-        </div>
-        <div class="technology">
-          <div class="tech-title">JavaScript</div>
-          <div class="tech-content">Add some functionality</div>
-          <ul class="tech-features">
-            <li>✅ Add functionality to some buttons</li>
-            <li>🚫 No functionality to exit and search buttons</li>
-            <li>🚫 I'll add to future updates</li>
-          </ul>
-        </div>
+      <div class="press-div">
+        <img
+          src="./assets/images/funnyImage.png"
+          alt="a funny image from ed edd eddy show"
+        />
+        <h2 class="press-h">
+          Press the button if you want to learn about me!!
+        </h2>
+        <button class="press-button">Yeah!</button>
       </div>
     </div>
 
@@ -285,5 +233,7 @@
         </ul>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
