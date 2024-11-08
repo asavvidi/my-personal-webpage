@@ -4,83 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        height: 100vh;
-        background-color: #dcdcdc;
-      }
-
-      .nav-container {
-        height: 15%;
-        width: 100%;
-        background-color: #d3d3d3;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .nav-header {
-        text-transform: uppercase;
-        margin-left: 2rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-size: 1.5rem;
-      }
-
-      .nav-unlist {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        font-size: 2rem;
-        margin-left: 30rem;
-      }
-      .nav-unlist > li {
-        margin-right: 3rem;
-        cursor: pointer;
-        transition: background-color 1s ease-out, color 1s ease-out;
-      }
-
-      .nav-unlist > li > a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .nav-unlist > li:hover {
-        color: white;
-      }
-      .nav-search {
-        width: 80px;
-        height: 40px;
-        border: none;
-        background-color: #d3d3d3;
-        cursor: pointer;
-      }
-
-      .nav-buttons {
-        display: flex;
-        align-items: center;
-        column-gap: 1rem;
-        margin-right: 2rem;
-      }
-
-      .nav-exit {
-        width: 80px;
-        height: 50px;
-        border: none;
-        background-color: #d3d3d3;
-        cursor: pointer;
-      }
-      .nav-exit > img {
-        width: 50px;
-        height: 50px;
-      }
-
       .main-container {
         width: 100%;
         height: auto;
@@ -112,7 +38,7 @@
       }
       .main-container h2 {
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 5rem;
       }
 
       .main-container-technologies {
@@ -156,45 +82,6 @@
         font-weight: bold;
         margin-bottom: 10px;
       }
-
-      .foot-container {
-        height: 20%;
-        width: 100%;
-        background-color: #d3d3d3;
-        margin-top: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .foot-apps {
-        max-width: 300px;
-        padding: 20px;
-        background-color: #dcdcdc;
-        text-align: center;
-        border-radius: 1rem;
-      }
-      .app-media {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .app-title {
-        font-size: 15px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .app-media > li {
-        font-size: 15px;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-      }
-      .app-media > li > img {
-        width: 20px;
-        height: 20px;
-      }
     </style>
   </head>
   <body>
@@ -204,7 +91,7 @@
         <li>
           <a href="home.html">Home</a>
         </li>
-        <li><a>Apps</a></li>
+        <li><a href="apps.html">Apps</a></li>
         <li><a>News</a></li>
         <li><a href="about.html">About me</a></li>
       </ul>
